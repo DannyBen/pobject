@@ -1,0 +1,10 @@
+require "runfile-tasks"
+
+require_relative 'lib/pobject'
+
+name    "PObject Developer Toolbelt"
+summary "Runfile tasks for building the PObject gem"
+version PObject::VERSION
+
+RunfileTasks::RubyGems.all 'pobject'
+RunfileTasks::Testing.rspec
