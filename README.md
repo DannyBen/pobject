@@ -28,7 +28,7 @@ gem 'pobject'
 Usage
 --------------------------------------------------
 
-Your object should inherit from PObject.
+Your object should inherit from `PObject`.
 
 ```ruby
 require 'pobject'
@@ -37,8 +37,8 @@ class Settings < PObject
 end
 ```
 
-Now, any time you access a property, it is saved to a file. By default, we will 
-svae a YAML file with the same name as the class:
+Now, any time you access a property, it is saved to a file. By default, we
+will save a YAML file with the same name as the class.
 
 
 ```ruby
@@ -50,9 +50,9 @@ config.port = 3000
 # Will create a 'settings.yml' file and store the port value
 ```
 
-You can access any attributes by either dot notation or hash notation.
+You can access any property by either dot notation or hash notation.
 
-```
+```ruby
 config.port
 # => 3000
 
@@ -74,8 +74,9 @@ config.port = 3000
 # Will create a 'config/local.yml'
 ```
 
-Whenever you use the `.yml` extension, PObject will store a YAML file. If you
-wish to store a `PStore` object instead, provide any other extension:
+Whenever you use the `.yml` (or `.yaml`) extension, we will store a YAML 
+file. If you wish to store a `PStore` object instead, use any other 
+extension.
 
 ```ruby
 class Settings < PObject
@@ -105,6 +106,8 @@ raynor = Hero.new :raynor
 
 hammer.name = 'Sgt. Hammer'
 raynor.name = 'Raynor'
+
+puts File.read 'heroes.yml'
 # => 
 # ---
 # :hammer:
@@ -115,7 +118,7 @@ raynor.name = 'Raynor'
 
 By default, PObject will raise an error when accessing a property that does
 not exist. To change this behavior, call `allow_missing` at the beinning of
-your object
+your class.
 
 ```ruby
 class Book < PObject
