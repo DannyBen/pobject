@@ -115,6 +115,25 @@ describe PObject do
       expected = "<Settings host:localhost, port:4567>"
       expect(settings.inspect).to eq expected
     end
+
+    context "with to_store array" do
+      let(:raynor) { Hero.new :raynor }
+
+      it "returns only the instance's inspect" do
+        raynor.name = 'Raynor'
+        expect(raynor.inspect).to eq "<Hero name:Raynor>"
+      end
+    end
+
+    context "with nested attributes" do
+      let(:raynor) { Hero.new :raynor }
+
+      it "properly presents the nested values" do
+        raynor.name = "Raynor"
+        raynor.abilities = ["Inspire", "Penetrating Rounds"]
+        expect(raynor.inspect).to eq '<Hero abilities:["Inspire", "Penetrating Rounds"], name:Raynor>'
+      end
+    end
   end
 
   describe "#allow_missing" do

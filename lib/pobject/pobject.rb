@@ -48,7 +48,7 @@ class PObject
   # Return a nice string when inspecting or printing. 
   # This will load values from the store if they were not already loaded.
   def inspect
-    properties = attributes.map { |var| [var, get(var)].join(":") }.join ', '
+    properties = attributes.sort.map { |var| [var, get(var).to_s].join(":") }.join ', '
     properties = " #{properties}" unless properties.empty?
     "<#{self.class.name}#{properties}>"
   end
@@ -63,7 +63,16 @@ class PObject
   # Return attribute names from the store.
   # TODO: Maybe also merge with instance_variables. Pay attention to @s.
   def attributes!
-    store.transaction { store.roots }.sort
+    result = []
+    store.transaction do 
+      if store_key
+        result = store[store_key] || {}
+        result = result.keys
+      else
+        result = store.roots
+      end
+    end
+    result = result.select { |a| a.is_a? Symbol }
   end
 
   private
