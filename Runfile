@@ -8,3 +8,10 @@ version PObject::VERSION
 
 RunfileTasks::RubyGems.all 'pobject'
 RunfileTasks::Testing.rspec
+
+help   "Run the dev/test script"
+action :dev do
+  Dir.chdir 'dev' do
+    run 'bundle exec ruby test.rb'
+  end
+end
