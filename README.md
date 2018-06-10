@@ -1,10 +1,11 @@
 Persistent Object
 ==================================================
 
-[![Gem](https://img.shields.io/gem/v/pobject.svg?style=flat-square)](https://rubygems.org/gems/pobject)
-[![Travis](https://img.shields.io/travis/DannyBen/pobject.svg?style=flat-square)](https://travis-ci.org/DannyBen/pobject)
-[![Code Climate](https://img.shields.io/codeclimate/github/DannyBen/pobject.svg?style=flat-square)](https://codeclimate.com/github/DannyBen/pobject)
-[![Gemnasium](https://img.shields.io/gemnasium/DannyBen/pobject.svg?style=flat-square)](https://gemnasium.com/DannyBen/pobject)
+[![Gem Version](https://badge.fury.io/rb/pobject.svg)](https://badge.fury.io/rb/pobject)
+[![Build Status](https://travis-ci.org/DannyBen/pobject.svg?branch=master)](https://travis-ci.org/DannyBen/pobject)
+[![Maintainability](https://api.codeclimate.com/v1/badges/aa8fa554a6b71904cd4e/maintainability)](https://codeclimate.com/github/DannyBen/pobject/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/aa8fa554a6b71904cd4e/test_coverage)](https://codeclimate.com/github/DannyBen/pobject/test_coverage)
+
 
 ---
 
