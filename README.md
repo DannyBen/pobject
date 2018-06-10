@@ -2,7 +2,7 @@ Persistent Object
 ==================================================
 
 [![Gem Version](https://badge.fury.io/rb/pobject.svg)](https://badge.fury.io/rb/pobject)
-[![Build Status](https://travis-ci.org/DannyBen/pobject.svg?branch=master)](https://travis-ci.org/DannyBen/pobject)
+[![Build Status](https://travis-ci.com/DannyBen/pobject.svg?branch=master)](https://travis-ci.com/DannyBen/pobject)
 [![Maintainability](https://api.codeclimate.com/v1/badges/aa8fa554a6b71904cd4e/maintainability)](https://codeclimate.com/github/DannyBen/pobject/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/aa8fa554a6b71904cd4e/test_coverage)](https://codeclimate.com/github/DannyBen/pobject/test_coverage)
 
