@@ -14,11 +14,5 @@ Gem::Specification.new do |s|
   s.files       = Dir['README.md', 'lib/**/*.*']
   s.homepage    = 'https://github.com/DannyBen/pobject'
   s.license     = 'MIT'
-  s.required_ruby_version = ">= 2.0.0"
-
-  s.add_development_dependency 'runfile', '~> 0.9'
-  s.add_development_dependency 'runfile-tasks', '~> 0.4'
-  s.add_development_dependency 'rspec', '~> 3.4'
-  s.add_development_dependency 'simplecov', '~> 0.14'
-  s.add_development_dependency 'byebug', '~> 9.0'
+  s.required_ruby_version = ">= 2.3.0"
 end
