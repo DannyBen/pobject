@@ -116,7 +116,7 @@ puts File.read 'heroes.yml'
 ```
 
 By default, PObject will raise an error when accessing a property that does
-not exist. To change this behavior, call `allow_missing` at the beinning of
+not exist. To change this behavior, call `allow_missing` at the beginning of
 your class.
 
 ```ruby
