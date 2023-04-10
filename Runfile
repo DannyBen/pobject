@@ -1,17 +1,4 @@
-require "runfile-tasks"
-
-require_relative 'lib/pobject'
-
 title   "PObject Developer Toolbelt"
 summary "Runfile tasks for building the PObject gem"
-version PObject::VERSION
 
-RunfileTasks::RubyGems.all 'pobject'
-RunfileTasks::Testing.rspec
-
-help   "Run the dev/test script"
-action :dev do
-  Dir.chdir 'dev' do
-    system 'bundle exec ruby test.rb'
-  end
-end
+import_gem 'runfile-tasks/gem'
