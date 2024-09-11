@@ -15,4 +15,12 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/DannyBen/pobject'
   s.license     = 'MIT'
   s.required_ruby_version = ">= 2.3.0"
+
+  s.add_dependency 'pstore', '~> 0.1'
+
+  s.metadata = {
+    'bug_tracker_uri'       => 'https://github.com/DannyBen/pobject/issues',
+    'source_code_uri'       => 'https://github.com/DannyBen/pobject',
+    'rubygems_mfa_required' => 'true',
+  }
 end
