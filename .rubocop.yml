@@ -12,3 +12,8 @@ AllCops:
   SuggestExtensions: false
   Exclude:
     - dev/**/*
+
+RSpec/SpecFilePathFormat:
+  Exclude:
+    - spec/pobject/pobject_spec.rb
+
