@@ -5,14 +5,14 @@ end
 # Test a different YAML location
 class Product < PObject
   def to_store
-    "spec/tmp/storage.yml"
+    'spec/tmp/storage.yml'
   end
 end
 
 # Test a different, non YAML (pstore) location
 class Monster < PObject
   def to_store
-    "spec/tmp/monster.pstore"
+    'spec/tmp/monster.pstore'
   end
 end
 
@@ -23,7 +23,7 @@ class Hero < PObject
   end
 
   def to_store
-    ["spec/tmp/heroes.yml", @id]
+    ['spec/tmp/heroes.yml', @id]
   end
 end
 
@@ -31,4 +31,3 @@ end
 class Book < PObject
   allow_missing
 end
-
