@@ -1,15 +1,7 @@
 Persistent Object
 ==================================================
 
-[![Gem Version](https://badge.fury.io/rb/pobject.svg)](https://badge.fury.io/rb/pobject)
-[![Build Status](https://github.com/DannyBen/pobject/workflows/Test/badge.svg)](https://github.com/DannyBen/pobject/actions?query=workflow%3ATest)
-[![Maintainability](https://api.codeclimate.com/v1/badges/aa8fa554a6b71904cd4e/maintainability)](https://codeclimate.com/github/DannyBen/pobject/maintainability)
-
----
-
 Transparently persist objects to disk as YAML or PStore files.
-
----
 
 Install
 --------------------------------------------------
