@@ -1,6 +1,8 @@
 Persistent Object
 ==================================================
 
+![repocard](https://repocard.dannyben.com/svg/pobject.svg)
+
 Transparently persist objects to disk as YAML or PStore files.
 
 Install
